@@ -36,7 +36,7 @@ void ucgenHesaplama() {
 	cout << "Ucgenin Alani: " << alan << endl;
 }
 
-void küreHesapla() {
+void kÃ¼reHesapla() {
 	double yaricap;
 	cout << "Yaricapi giriniz: ";
 	cin >> yaricap;
@@ -64,7 +64,7 @@ void dPrizmaHesapla() {
 int main() {
 
 	int choice;
-
+	do{
 	cout << endl;
 	cout << "--------Geomteri Hesap Makinesi--------" << endl;
 	cout << "1. Dairenin Alani ve Cevresi" << endl;
@@ -87,7 +87,7 @@ int main() {
 		ucgenHesaplama();
 		break;
 	case 4:
-		küreHesapla();
+		kÃ¼reHesapla();
 		break;
 	case 5:
 		dPrizmaHesapla();
@@ -97,10 +97,10 @@ int main() {
 		break;
 
 	default:
-		cout << "Gecersiz secenek! Lütfen tekrar deneyin." << endl;
+		cout << "Gecersiz secenek! LÃ¼tfen tekrar deneyin." << endl;
 		break;
 	}
-	while (choice != 0);
+	} while (choice != 0);
 
 	return 0;
 }
